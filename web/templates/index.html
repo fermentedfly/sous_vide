@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title | safe }}</title>
+    <link rel="stylesheet" href="../static/solarized.css/">
+</head>
+<body>
+    <h1>Hello, Whale :)</h1>
+    <h2>Servers date and time is {{ time | safe }}</h2>
+    <h2>Some fancy temperature data goes here</h2>
+    {{ data | safe }}
+</body>
+</html>

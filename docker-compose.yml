@@ -1,0 +1,15 @@
+  version: "3"
+  services:
+    database:
+      build: ./database
+      ports:
+      - "5001:5000"
+      volumes:
+      - ./database:/app
+
+    web:
+      build: ./web
+      ports:
+      - "5000:5000"
+      volumes:
+      - ./web:/app
